@@ -1,0 +1,246 @@
+/* CSS */
+
+/* import icons */
+
+@import url("_fonts/fontsawesome/font-awesome.css");
+
+/* Style */
+
+body{
+	margin: 0 auto;
+	padding: 0 auto;
+	background: #eee;
+	color: #222831;
+	font-size: 20px;
+	font-family: "essonnes-text",sans-serif;
+}
+
+.container{
+	max-width: 1080px;
+	width: 84.375%;
+	margin: 0 auto;
+  	
+}
+.container__el{
+	position: relative;	
+	width: 45%;
+	margin: 10% auto 2%;
+	line-height: 1.5em;
+}
+.container__el:after{
+	display: block;
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: #F1C40F;
+}
+.container__el--title{
+	font-family: "essonnes-headline",sans-serif;
+}
+.title{
+	font-family: "acier-bat-solid",sans-serif;
+	color: #f1C40F;
+	text-align: center;
+
+}
+.title--main{
+	position: absolute;
+	font-size: 10em;
+	text-transform: uppercase;
+	line-height: .9em;
+	top: 0;
+	left: 7.5%;
+	width: 85%;
+}
+.title--left{
+	position: relative;
+}
+.title--right{
+	position: relative;
+}
+.btn{
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}
+.btn a{
+	position: relative;
+	text-decoration: none;
+	color: #222831;
+	transition: all .2s cubic-bezier(.47,.07,.21,1.4);
+}
+.btn a::after{
+	position: absolute;
+  	left: 0;
+  	top: 50%;
+  	background: #F1C40F;
+  	height: 3px;
+  	width: 0;
+  	display: block;
+  	content: "";
+  	transition: all .3s cubic-bezier(.47,.07,.21,1.4).1s;
+  
+}
+.btn a:hover::after{
+  	width: 100%;
+}
+.social{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	margin-top: 2%;
+}
+.social__el{
+	font-size: 1.5em;	
+	margin: 0% 2%;
+	display: inline-block;
+	transition: all .3s cubic-bezier(.47,.07,.21,1.4).1s;
+}
+.social__el a{
+
+	transition: all .3s ease-in;
+	color: #222831;
+	
+}
+.social__el:hover{
+	transform: scale(1.5);
+}
+.social__el a:hover{
+	color: #F1C40F;
+}
+
+/* Animations */
+
+
+/* On load */
+
+/* Title */
+@-webkit-keyframes title {
+  0%   { opacity: 1; }
+  100% { opacity: .2;  }
+}
+@-moz-keyframes title {
+  0%   { opacity: 1; }
+  100% { opacity: .2;  }
+}
+@-o-keyframes title {
+  0%   { opacity: 1;  }
+  100% { opacity: .2;  }
+}
+@keyframes title {
+  0%   { opacity: 1;  }
+  100% { opacity: .2;   }
+}
+
+.title{
+animation: title 1s 2s both;
+animation-timing-function: ease-out;
+}
+
+/* gauche */
+
+@-webkit-keyframes title--left {
+  0%   { left: 0;  }
+  100% { left:-50px;  }
+}
+@-moz-keyframes title--left {
+  0%   { left: 0;  }
+  100% { left:-50px;  }
+}
+@-o-keyframes title--left {
+  0%   { left: 0;  }
+  100% { left:-50px;  }
+}
+@keyframes title--left {
+  0%   { left: 0;  }
+  100% { left:-50px;  }
+}
+
+.title--left{
+animation: title--left .5s 2s both;
+animation-timing-function: cubic-bezier(.47,.07,.21,1.4).1s;
+}
+
+/* Right */
+
+@-webkit-keyframes title--right {
+  0%   { left: 0;  }
+  100% { left: 50px;  }
+}
+@-moz-keyframes title--right {
+  0%   { left: 0;  }
+  100% { left: 50px;  }
+}
+@-o-keyframes title--right {
+  0%   { left: 0;  }
+  100% { left: 50px;  }
+}
+@keyframes title--right {
+   0%   { left: 0;  }
+  100% { left: 50px;  }
+}
+
+.title--right{
+animation: title--right .5s 2s both;
+animation-timing-function: cubic-bezier(.47,.07,.21,1.4).1s;
+}
+/* Container */
+
+
+@-webkit-keyframes container__el {
+  0%   { opacity: 0;}
+  100% { opacity: 1; }
+}
+@-moz-keyframes container__el {
+  0%   { opacity: 0;}
+  100% { opacity: 1; }
+}
+@-o-keyframes container__el {
+  0%   { opacity: 0; }
+  100% { opacity: 1;  }
+}
+@keyframes container__el {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.container__el {
+  -webkit-animation: container__el 5s; /* Safari 4+ */
+  -moz-animation:    container__el 5s; /* Fx 5+ */
+  -o-animation:      container__el 5s; /* Opera 12+ */
+animation: container__el 1.5s 3s both;
+animation-timing-function: cubic-bezier(.47,.07,.21,1.4).1s;
+}
+
+}
+
+/* Content */
+
+
+@-webkit-keyframes content {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes content {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes content {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes content {
+  0%   { opacity: 0;  }
+  100% { opacity: 1; }
+}
+
+.content {
+
+ animation-name: content;
+ animation-duration: 1s;
+ animation-iteration-count: 1;
+ animation-timing-function: ease-in;
+
+
+}
